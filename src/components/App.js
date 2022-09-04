@@ -3,7 +3,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
-import DeleteIcon from '@mui/icons-material/Delete';
 
 function App() {
   const [notes, setNotes] = useState([]);
@@ -25,7 +24,6 @@ function App() {
   return (
     <div>
       <Header />
-      <DeleteIcon />
       <CreateArea onAdd={addNote} />
       {notes.map((noteItem, index) => {
         return (
